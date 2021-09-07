@@ -1,0 +1,24 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+.app{
+  background-color:#ffffff;
+  margin-left: 20px;
+  margin-right: 20px;
+
+}
+
+li{
+  list-style: none;
+}
+
+
+
+@media screen and (max-width : 655px){
+  .app{
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}

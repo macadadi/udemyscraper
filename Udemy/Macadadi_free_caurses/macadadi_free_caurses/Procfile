@@ -1,0 +1,1 @@
+web: gunicorn macadadi_free_caurses.wsgi

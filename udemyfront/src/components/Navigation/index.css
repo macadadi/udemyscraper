@@ -1,0 +1,71 @@
+.nav-component{
+    background-color:#e4e4e4
+    ;
+}
+.category{
+    font-size: larger;
+    padding: 2px;
+    transition: 0.4s ;
+}
+.category > *{
+    padding-right: 15px;
+    font-size: larger;
+    text-decoration: none;
+    color: black;
+}
+
+.category > *:hover{
+    color: blue;
+}
+/* .category > *:visited{
+    color: red;
+} */
+
+
+/* styling for the banner */
+.banner-img{
+    object-fit: contain;
+}
+.banner h5{
+    font-size: 30px;
+}
+
+.banner p{
+    margin: 0px;
+    padding: 0px;
+    margin-top: -18px;
+    text-decoration: underline;
+    position:relative;
+    right: 0px;
+    padding-left: 110px;
+    
+}
+.nav-btn{
+    display: none;
+}
+
+@media screen and (max-width :1320px) {
+    .small-screen{
+        background-color: #0dcaf0;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+    .nav-btn{
+        display: inline;
+        border: none;
+        outline: none;
+    }
+
+    .category{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin: 20px; 
+        min-height: 100vh; 
+    }
+    .hidemenu{
+        margin-left: -2000px;
+    }
+  
+}
