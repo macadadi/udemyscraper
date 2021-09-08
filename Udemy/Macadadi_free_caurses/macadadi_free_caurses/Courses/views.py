@@ -11,7 +11,7 @@ from .pageurldata import urls_data
 
 from django.core.files.base import ContentFile
 #
-# from .tasks import create_random_user_accounts
+from .tasks import create_random_user_accounts
 
 
 
@@ -23,11 +23,11 @@ def index(request):
 
 
 
-
+    create_random_user_accounts()
 
     # get_free_course('https://www.udemyfreebies.com/course-category/development')
     name = FreeCourses.objects.all()
-    # create_random_user_accounts.delay()
+   
 
 
     return render(request, 'index.html', {'name':name})
