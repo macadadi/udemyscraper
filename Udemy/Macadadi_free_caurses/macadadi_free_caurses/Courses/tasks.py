@@ -81,7 +81,7 @@ def get_free_course(base_url,category):
         return
 
 
-@shared_task(bind=True)
+# @shared_task(bind=True)
 def create_random_user_accounts(self):
     for Link in urls_data:
         for key in Link:
