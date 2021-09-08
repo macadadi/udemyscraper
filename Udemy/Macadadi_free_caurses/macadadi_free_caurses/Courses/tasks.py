@@ -83,17 +83,16 @@ def get_free_course(base_url,category):
 
 @shared_task(bind=True)
 def create_random_user_accounts(self):
-    # for Link in urls_data:
-    #     for key in Link:
-    #         category = key
-    #         for i in range(5):
-    #             if i == 0:
-    #                 base_url = Link[key]
-    #             else:
-    #                 base_url = Link[key] + '/' + str(i)
-    #             get_free_course(base_url,category)
-    for i in range(10):
-        print("I am makadadi the boss, a good programmer hire me,am in the making")
+    for Link in urls_data:
+        for key in Link:
+            category = key
+            for i in range(5):
+                if i == 0:
+                    base_url = Link[key]
+                else:
+                    base_url = Link[key] + '/' + str(i)
+                get_free_course(base_url,category)
+
 
 
 @shared_task(bind=True)
